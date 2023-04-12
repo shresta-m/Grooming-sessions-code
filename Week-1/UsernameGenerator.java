@@ -6,10 +6,10 @@ import java.time.format.*;
 
 public class UsernameGenerator {
     public static boolean validateName(String name) {
-        name = name.replace(" ", "");
         if (name.isBlank() || name.isEmpty()) {
             return false;
         }
+        name = name.replace(" ", "");
         for (int i = 0; i < name.length(); i++) {
             if (!Character.isLetter(name.charAt(i))) {
                 return false;
