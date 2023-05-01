@@ -1,0 +1,41 @@
+1.
+Create a program to track the employment information of a company . 
+Store the following details of each employee in the appropriate collection  
+EmployeeId (Unique) 
+EmployeeName 
+JoiningDate 
+EmploymentType (Contract/Full time) 
+Role 
+Status (Active/Exit/Serving Notice) 
+
+Create following functions :  
+Add new employees.  
+Delete employees – Update status to Dismissed. 
+Update the Employment Type of an employee. 
+Update the Role of an employee. 
+Write a function to identify the senior most employees in the company. 
+Get the list of employees given a particular status.  
+
+ 
+2.
+Create a program that reads the employee from a file and has the following functionalities  . 
+File contents. : 
+   <EmployeeId>;<EmployeeName>;<JoiningDate>;<EmploymentType>;<Role>;<Domain> 
+
+Complete the following functions : 
+Function to read and parse the content of file given file name 
+Display the employee details given employee Id . 
+Display the list of employees given role . 
+Display the list of employees having experience >= given minimum years of experience. 
+
+3. Create a program to implement sorting on any primitive type array using generics . 
+
+Note : Same function should be able to sort any of int[],String[],Char[] .  
+
+// Multithreading 
+
+// Synchronisation, Lock, Re-entrant Lock, Join 
+
+// Executor-Framework 
+
+// Future & Callable 

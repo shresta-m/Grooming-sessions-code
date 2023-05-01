@@ -1,0 +1,15 @@
+Consider a list of items with each item having following properties. 
+Id – (Alphanumeric String) – (Unique) 
+Name (String) 
+Warranty (Boolean) 
+Category(String) – Enum (Mobile , Laptop , TV , Refrigerator ) 
+Given the above list , Write a program to accept the category of items as input and filter the list based on it . Output should be List<List<Product>> where one list represents items with warranty and other without warranty . 
+Note : Use Functional interface and lambda expressions to implement filters and printing the list. 
+
+
+Write a function to find the numbers that have digit 9 in them from 1 to 1000 . 
+Use fork join framework to create tasks where each task can filter only 100 numbers. 
+
+
+Calculate sum of 1 to 30 integers . 
+Create 3 CompletableFuture instances each to calculate sum of 1 – 10 , 11-20,21-30 respectively and combine those results. 
