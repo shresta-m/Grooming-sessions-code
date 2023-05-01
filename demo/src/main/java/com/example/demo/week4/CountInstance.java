@@ -20,16 +20,16 @@ public class CountInstance extends RecursiveTask<Integer> {
         if (arrLength == threshold)
             return countInstance();
         else {
-            CountInstance subtask_1 = new CountInstance(arr, 0, 99);
-            CountInstance subtask_2 = new CountInstance(arr, 100, 199);
-            CountInstance subtask_3 = new CountInstance(arr, 200, 299);
-            CountInstance subtask_4 = new CountInstance(arr, 300,399);
-            CountInstance subtask_5 = new CountInstance(arr, 400,499);
-            CountInstance subtask_6 = new CountInstance(arr, 500, 599);
-            CountInstance subtask_7 = new CountInstance(arr, 600, 699);
-            CountInstance subtask_8 = new CountInstance(arr, 700, 799);
-            CountInstance subtask_9 = new CountInstance(arr, 800,899);
-            CountInstance subtask_10 = new CountInstance(arr, 900,999);
+            CountInstance subtask_1 = new CountInstance(arr, 0, threshold-1);
+            CountInstance subtask_2 = new CountInstance(arr, threshold, threshold*2-1);
+            CountInstance subtask_3 = new CountInstance(arr, threshold*2, threshold*3-1);
+            CountInstance subtask_4 = new CountInstance(arr, threshold*3,threshold*4-1);
+            CountInstance subtask_5 = new CountInstance(arr, threshold*4,threshold*5-1);
+            CountInstance subtask_6 = new CountInstance(arr, threshold*5, threshold*6-1);
+            CountInstance subtask_7 = new CountInstance(arr, threshold*6, threshold*7-1);
+            CountInstance subtask_8 = new CountInstance(arr, threshold*7, threshold*8-1);
+            CountInstance subtask_9 = new CountInstance(arr, threshold*8,threshold*9-1);
+            CountInstance subtask_10 = new CountInstance(arr, threshold*9,threshold*10-1);
              subtask_1.fork();
              subtask_2.fork();
              subtask_3.fork();
