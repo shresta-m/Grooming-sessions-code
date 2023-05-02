@@ -16,14 +16,14 @@ public class CountInstance extends RecursiveTask<Integer> {
 
     @Override
     protected Integer compute() {
-       int arrLength = end - start + 1;
+        int arrLength = end - start + 1;
         if (arrLength <= threshold) {
+            System.out.println(Thread.currentThread().getName());
             return countInstance();
         }
         else {
-            int mid = (start + end) / 2;
-            CountInstance subtask_1 = new CountInstance(arr, start, mid);
-            CountInstance subtask_2 = new CountInstance(arr, mid + 1, end);
+            CountInstance subtask_1 = new CountInstance(arr, start, start+threshold-1);
+            CountInstance subtask_2 = new CountInstance(arr, start+threshold, end);
             subtask_1.fork();
             subtask_2.fork();
 
