@@ -1,0 +1,10 @@
+ 
+
+Write methods to give following data :
+
+Overall % each student  
+Top 3 and bottom 3 students in each course along with course details 
+List of students who failed in atleast one subject along with course and prof details. 
+Pass percentage of each course along with course and professor details 
+Professor details along with the average marks obtained in the course he/she taught. 
+Professor details  along with course details who have atleast 50% pass percentage in their subject 
